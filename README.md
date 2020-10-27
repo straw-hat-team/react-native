@@ -17,8 +17,10 @@ import * as Stylesheet from '@straw-hat/react-native/stylesheet';
 
 // Returns if the device is a tablet
 isTablet();
+
 // Returns if the device is a phone
 isPhone();
+
 // Returns the device type
 getDeviseType();
 
@@ -33,22 +35,22 @@ getOrientation();
 
 // Runs the callbacks based on the environment
 onDevelopment(function developmentCallback() {
-  console.log('💻 I am running in development.')
+  console.log('💻 I am running in development.');
 });
 
 onDevelopment(
-  function developmentCallback() { console.log('💻 I am running in development.') },
-  function productionCallback() { console.log('I am running in production.') },
+  function developmentCallback() { console.log('💻 I am running in development.'); },
+  function productionCallback() { console.log('I am running in production.'); },
 );
 
 // Runs the callbacks based on the environment
 onProduction(
-  function productionCallback() { console.log('I am running in production.') },
-  function developmentCallback() { console.log('💻 I am running in development.') },
+  function productionCallback() { console.log('I am running in production.'); },
+  function developmentCallback() { console.log('💻 I am running in development.'); },
 );
 
 onProduction(function productionCallback() {
-  console.log('I am running in production.')
+  console.log('I am running in production.');
 });
 
 // Allow you to define the styles for iOS and Android in a cohesive way.
@@ -59,8 +61,8 @@ const styles = Stylesheet.create({
   },
   android: {
     // all your Android styles here
-  }
-})
+  },
+});
 
 // It takes a number and respect the pixel ratio across the devices.
 const value = Stylesheet.normalize(20);
