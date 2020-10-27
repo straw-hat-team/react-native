@@ -1,13 +1,15 @@
 {
-  "name": "@straw-hat/CHANGE_ME_PACKAGE_NAME",
-  "version": "0.0.1",
-  "description": "CHANGE_ME_DESCRIPTION",
+  "name": "@straw-hat/react-native",
+  "version": "0.2.0",
+  "description": "React Native utilities",
   "repository": {
     "type": "git",
-    "url": "https://github.com/straw-hat-team/CHANGE_ME_REPO_NAME.git"
+    "url": "https://github.com/straw-hat-team/react-native.git"
   },
   "license": "MIT",
   "keywords": [
+    "react",
+    "react-native",
     "straw-hat-team"
   ],
   "publishConfig": {
@@ -26,11 +28,16 @@
     "dist",
     "README.md"
   ],
+  "peerDependencies": {
+    "react-native": "^0.61.3"
+  },
   "devDependencies": {
-    "@straw-hat/tsconfig": "^2.1.0",
     "@straw-hat/prettier-config": "^1.1.0",
+    "@straw-hat/tsconfig": "^2.1.0",
     "@types/jest": "^26.0.14",
+    "@types/react-native": "^0.63.30",
     "jest": "^26.5.0",
+    "react-native": "^0.61.3",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
